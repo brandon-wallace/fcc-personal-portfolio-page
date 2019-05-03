@@ -1,0 +1,290 @@
+:root {
+  --soft-blue: hsl(197, 91%, 49%);
+  --softer-blue: hsl(197, 91%, 69%);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-family: 'Source Code Pro', monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+}
+
+#navbar {
+  background-color: var(--softer-blue);
+}
+
+.hamburger {
+  width: 50px;
+  height: 50px;
+  margin: 1px;
+  background: -webkit-repeating-linear-gradient(#222, #222 6px, var(--softer-blue) 6px, var(--softer-blue) 12px);
+  background: -o-repeating-linear-gradient(#222, #222 6px, var(--softer-blue) 6px, var(--softer-blue) 12px);
+  background: repeating-linear-gradient(#222, #222 6px, var(--softer-blue) 6px, var(--softer-blue) 12px);
+}
+
+.menu {
+  height: 50px;
+  margin: 0;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  list-style-type: none;
+}
+
+.menu-link {
+  padding: .9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  text-align: center;
+  background-color: hsl(197, 91%, 69%);
+}
+
+.menu:hover .hidden {
+  display: block;
+  border-bottom: 2px solid var(--soft-blue);
+}
+
+.hidden {
+  display: none;
+}
+
+.menu-link:hover {
+  background-color: hsl(197, 91%, 79%);
+}
+
+#welcome-section,
+.profile-content {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#welcome-section {
+  background-color: hsl(197, 91%, 49%);
+}
+
+.welcome-title {
+  font-family: 'Playfair Display', serif;
+}
+
+.title-start {
+  color: hsl(226, 91%, 48%);
+}
+
+.welcome-subtitle {
+  color: hsl(226, 91%, 10%);
+}
+
+.title-end {
+  color: hsl(246, 91%, 29%);
+}
+
+.welcome-content {
+  text-align: center;
+}
+
+.welcome-title,
+.welcome-subtitle {
+  margin: 0;
+}
+
+.welcome-title {
+  font-size: 3rem;
+}
+
+#projects {
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  background-color: hsl(66, 94%, 59%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.project-content {
+  width: 80%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project-tile {
+  width: 300px;
+  height: 300px;
+  font-size: 2rem;
+  margin-bottom: .5em;
+  background-color: hsl(282, 96%, 49%);
+}
+
+.profile-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: hsl(0, 92%, 58%);
+}
+
+.profile-title {
+  font-size: 2rem;
+}
+
+.profile-link-container {
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.fab {
+  font-size: 6rem;
+  color: hsl(0, 66%, 5%);
+}
+
+footer {
+  height: 20vh;
+  color: #DDDFFF;
+  line-height: 20vh;
+  background-color: #121212;
+}
+
+footer p {
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.centered {
+  /* margin: 0; */
+  text-align: center;
+}
+
+@media (min-width: 400px) {
+  .menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .menu:hover .hidden {
+    border-bottom: 0;
+  }
+  .hamburger {
+    display: none;
+  }
+  .hidden {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .up {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .down {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+@media (min-width: 500px) and (min-height: 500px) {
+  .welcome-title {
+    font-size: 6rem;
+  }
+  .welcome-subtitle,
+  .project-title,
+  .profile-title {
+    font-size: 3rem;
+  }
+  .project-content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .fab {
+    font-size: 8rem;
+  }
+}
