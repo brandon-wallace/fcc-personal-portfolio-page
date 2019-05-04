@@ -1,14 +1,14 @@
 :root {
+  scroll-behavior: smooth;
   --soft-blue: hsl(197, 91%, 49%);
   --softer-blue: hsl(197, 91%, 69%);
-  --lovely-blue: hsl(197, 91%, 49%);
+  --lovely-blue: hsl(217, 100%, 35%);
   --darker-blue: hsl(197, 80%, 30%);
 }
 
 html,
 body {
   width: 100%;
-  /* height: 100%; */
 }
 
 body {
@@ -96,11 +96,29 @@ header {
 }
 
 #welcome-section {
-  background-color: var(--lovely-blue);
+  background-color: var(--soft-blue);
 }
 
 .welcome-title {
   font-family: 'Playfair Display', serif;
+  animation: upward-slide 1000ms ease-in-out 250ms;
+}
+
+.welcome-subtitle {
+  animation: upward-slide 1000ms ease-in-out 500ms;
+}
+
+@keyframes upward-slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(25vh);
+            transform: translateY(25vh);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .title-start {
@@ -108,7 +126,7 @@ header {
 }
 
 .welcome-subtitle {
-  color: hsl(226, 91%, 10%);
+  color: var(--lovely-blue);
 }
 
 .title-end {
@@ -132,7 +150,6 @@ header {
   width: 100vw;
   height: 100%;
   min-height: 100vh;
-  /* background-color: hsl(66, 94%, 59%); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,7 +165,6 @@ header {
 
 .project-content {
   width: 80%;
-  height: 75vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,7 +185,13 @@ header {
   height: 300px;
   font-size: 2rem;
   margin-bottom: .5em;
+  transition: all 250ms linear;
   background-color: hsl(282, 96%, 49%);
+}
+
+.project-tile:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 2px #888888;
 }
 
 .profile-content {
@@ -186,7 +208,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: var(--lovely-blue);
+  background-color: var(--soft-blue);
 }
 
 .profile-title {
@@ -214,6 +236,12 @@ header {
 .fab {
   font-size: 6rem;
   color: hsl(0, 66%, 5%);
+  transition: all 250ms linear;
+}
+
+.fab:hover {
+  transform: scale(1.05);
+  text-shadow: 4px 4px 1px #DDDDDD;
 }
 
 footer {
@@ -230,7 +258,7 @@ footer p {
 }
 
 .footer--link {
-  color: var(--lovely-blue);
+  color: var(--soft-blue);
 }
 
 .centered {
@@ -278,6 +306,7 @@ footer p {
     font-size: 3rem;
   }
   .project-content {
+    height: 75vh;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
