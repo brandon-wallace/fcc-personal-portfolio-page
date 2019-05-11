@@ -97,6 +97,7 @@ header {
 
 #welcome-section {
   background-color: var(--soft-blue);
+  background-image: linear-gradient(2deg, var(--soft-blue) 83.9%, var(--softer-blue) 84.1%);
 }
 
 .welcome-title {
@@ -161,6 +162,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   justify-content: center;
+  background-image: linear-gradient(2deg, #FFFFFF 91.9%, var(--soft-blue) 92.1%);
 }
 
 .project-content {
@@ -178,6 +180,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-image: linear-gradient(2deg, var(--softer-blue) 91.9%, #FFFFFF 92.1%);
 }
 
 .project-tile {
@@ -209,6 +212,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: var(--soft-blue);
+  background-image: linear-gradient(2deg, var(--soft-blue) 91.9%, #FFFFFF 92.1%);
 }
 
 .profile-title {
