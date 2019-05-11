@@ -106,6 +106,8 @@ header {
 }
 
 .welcome-subtitle {
+  text-align: right;
+  letter-spacing: .55rem;
   animation: upward-slide 1000ms ease-in-out 500ms;
 }
 
