@@ -3,7 +3,7 @@
   --soft-blue: hsl(197, 91%, 49%);
   --softer-blue: hsl(197, 91%, 69%);
   --lovely-blue: hsl(217, 100%, 35%);
-  --darker-blue: hsl(197, 80%, 30%);
+  --darker-blue: hsl(240, 100%, 20%);
 }
 
 html,
@@ -106,6 +106,7 @@ header {
 }
 
 .welcome-subtitle {
+  font-size: 2rem;
   margin-top: 10px;
   letter-spacing: .2rem;
   animation: upward-slide 1000ms ease-in-out 500ms;
@@ -128,12 +129,16 @@ header {
   color: hsl(226, 91%, 48%);
 }
 
-.welcome-subtitle {
-  color: var(--lovely-blue);
+.title-middle {
+  color: hsl(236, 91%, 38%);
 }
 
 .title-end {
   color: hsl(246, 91%, 29%);
+}
+
+.welcome-subtitle {
+  color: var(--darker-blue);
 }
 
 .welcome-content {
@@ -315,13 +320,13 @@ footer p {
     font-size: 6rem;
   }
   .welcome-subtitle {
-    text-align: right;
+    text-align: center;
     letter-spacing: .55rem;
   }
   .welcome-subtitle,
   .project-title,
   .profile-title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .project-content {
     height: 75vh;
@@ -337,5 +342,12 @@ footer p {
   }
   .fab {
     font-size: 8rem;
+  }
+}
+
+@media (min-width: 730px) {
+  .welcome-subtitle {
+    text-align: right;
+    font-size: 3rem;
   }
 }
